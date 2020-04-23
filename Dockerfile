@@ -1,6 +1,6 @@
 # PyTezos
 #
-# v2.4.4
+# v2.4.5
 #
 
 FROM python:3-alpine
@@ -34,6 +34,6 @@ RUN apk update \
 	&& cd .. && rm -rf secp256k1/ \
 	&& pip3 install poetry==1.0.5 \
 	&& pip3 install --no-build-isolation pendulum==2.1.0 \
-	&& pip3 install pytezos==2.4.4 \
+	&& pip3 install pytezos==2.4.5 \
 	&& pip3 uninstall --yes poetry \
 	&& apk del build-deps
